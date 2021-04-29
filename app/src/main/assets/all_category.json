@@ -1,0 +1,1647 @@
+{
+  "gameCategory": [
+    {
+      "categoryId": 137,
+      "categoryName": "休闲益智",
+      "childCategoryList": [
+        {
+          "categoryId": 137061,
+          "categoryName": "休闲",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        },
+        {
+          "categoryId": 137062,
+          "categoryName": "捕鱼",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        },
+        {
+          "categoryId": 137063,
+          "categoryName": "消除",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        },
+        {
+          "categoryId": 137064,
+          "categoryName": "单机",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        },
+        {
+          "categoryId": 137065,
+          "categoryName": "益智",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        },
+        {
+          "categoryId": 137066,
+          "categoryName": "女生",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_casualgamegame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 138,
+      "categoryName": "网络游戏",
+      "childCategoryList": [
+        {
+          "categoryId": 138046,
+          "categoryName": "三国",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        },
+        {
+          "categoryId": 138047,
+          "categoryName": "二次元",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        },
+        {
+          "categoryId": 138048,
+          "categoryName": "西游",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        },
+        {
+          "categoryId": 138049,
+          "categoryName": "仙侠",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        },
+        {
+          "categoryId": 138050,
+          "categoryName": "热血",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        },
+        {
+          "categoryId": 138051,
+          "categoryName": "动漫",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_webgame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 139,
+      "categoryName": "军事战争",
+      "childCategoryList": [
+        {
+          "categoryId": 139035,
+          "categoryName": "国战",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        },
+        {
+          "categoryId": 139036,
+          "categoryName": "飞行射击",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        },
+        {
+          "categoryId": 139037,
+          "categoryName": "坦克",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        },
+        {
+          "categoryId": 139038,
+          "categoryName": "枪战",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        },
+        {
+          "categoryId": 139039,
+          "categoryName": "海战",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        },
+        {
+          "categoryId": 139040,
+          "categoryName": "合金弹头",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_wargame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 140,
+      "categoryName": "动作冒险",
+      "childCategoryList": [
+        {
+          "categoryId": 140037,
+          "categoryName": "跑酷",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        },
+        {
+          "categoryId": 140038,
+          "categoryName": "格斗",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        },
+        {
+          "categoryId": 140039,
+          "categoryName": "动作",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        },
+        {
+          "categoryId": 140040,
+          "categoryName": "横版",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        },
+        {
+          "categoryId": 140041,
+          "categoryName": "闯关",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        },
+        {
+          "categoryId": 140042,
+          "categoryName": "街机",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_actiongame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 141,
+      "categoryName": "体育竞速",
+      "childCategoryList": [
+        {
+          "categoryId": 141037,
+          "categoryName": "足球",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        },
+        {
+          "categoryId": 141038,
+          "categoryName": "篮球",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        },
+        {
+          "categoryId": 141039,
+          "categoryName": "摩托",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        },
+        {
+          "categoryId": 141040,
+          "categoryName": "赛车",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        },
+        {
+          "categoryId": 141041,
+          "categoryName": "台球",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        },
+        {
+          "categoryId": 141042,
+          "categoryName": "运动",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://cms.gtimg.com/android_cms/fk/7ba18d7ff23753c9533879c2b6c1c122.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 142,
+      "categoryName": "棋牌中心",
+      "childCategoryList": [
+        {
+          "categoryId": 142021,
+          "categoryName": "斗地主",
+          "iconUrl": "",
+          "parentCategoryId": 142,
+          "reqType": -2
+        },
+        {
+          "categoryId": 142022,
+          "categoryName": "棋类",
+          "iconUrl": "",
+          "parentCategoryId": 142,
+          "reqType": -2
+        },
+        {
+          "categoryId": 142023,
+          "categoryName": "麻将",
+          "iconUrl": "",
+          "parentCategoryId": 142,
+          "reqType": -2
+        },
+        {
+          "categoryId": 142025,
+          "categoryName": "纸牌",
+          "iconUrl": "",
+          "parentCategoryId": 142,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_cardgame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 144,
+      "categoryName": "经营策略",
+      "childCategoryList": [
+        {
+          "categoryId": 144031,
+          "categoryName": "策略",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        },
+        {
+          "categoryId": 144032,
+          "categoryName": "塔防",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        },
+        {
+          "categoryId": 144033,
+          "categoryName": "经营",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        },
+        {
+          "categoryId": 144034,
+          "categoryName": "模拟",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        },
+        {
+          "categoryId": 144035,
+          "categoryName": "养成",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        },
+        {
+          "categoryId": 144036,
+          "categoryName": "沙盘",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_simulaitiongame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 145,
+      "categoryName": "角色扮演",
+      "childCategoryList": [
+        {
+          "categoryId": 145171,
+          "categoryName": "卡牌",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        },
+        {
+          "categoryId": 145172,
+          "categoryName": "回合",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        },
+        {
+          "categoryId": 145173,
+          "categoryName": "RPG",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        },
+        {
+          "categoryId": 145174,
+          "categoryName": "武侠",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        },
+        {
+          "categoryId": 145175,
+          "categoryName": "魔幻",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        },
+        {
+          "categoryId": 145176,
+          "categoryName": "多人在线",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_rolegame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 146,
+      "categoryName": "电子竞技",
+      "childCategoryList": [
+        {
+          "categoryId": 146013,
+          "categoryName": "MOBA",
+          "iconUrl": "",
+          "parentCategoryId": 146,
+          "reqType": -2
+        },
+        {
+          "categoryId": 146014,
+          "categoryName": "射击",
+          "iconUrl": "",
+          "parentCategoryId": 146,
+          "reqType": -2
+        },
+        {
+          "categoryId": 146015,
+          "categoryName": "争霸",
+          "iconUrl": "",
+          "parentCategoryId": 146,
+          "reqType": -2
+        },
+        {
+          "categoryId": 146016,
+          "categoryName": "音乐节奏",
+          "iconUrl": "",
+          "parentCategoryId": 146,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_copetitiongame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 147,
+      "categoryName": "特色分类",
+      "childCategoryList": [
+        {
+          "categoryId": 147001,
+          "categoryName": "烧脑",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        },
+        {
+          "categoryId": 147002,
+          "categoryName": "手残勿点",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        },
+        {
+          "categoryId": 147003,
+          "categoryName": "时间杀手",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        },
+        {
+          "categoryId": 147004,
+          "categoryName": "魔性",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        },
+        {
+          "categoryId": 147005,
+          "categoryName": "生存",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        },
+        {
+          "categoryId": 147006,
+          "categoryName": "有毒",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_special.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 148,
+      "categoryName": "休闲益智",
+      "childCategoryList": [
+        {
+          "categoryId": 137061,
+          "categoryName": "休闲",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        },
+        {
+          "categoryId": 137062,
+          "categoryName": "捕鱼",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        },
+        {
+          "categoryId": 137063,
+          "categoryName": "消除",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        },
+        {
+          "categoryId": 137064,
+          "categoryName": "单机",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        },
+        {
+          "categoryId": 137065,
+          "categoryName": "益智",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        },
+        {
+          "categoryId": 137066,
+          "categoryName": "女生",
+          "iconUrl": "",
+          "parentCategoryId": 137,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_casualgamegame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 149,
+      "categoryName": "网络游戏",
+      "childCategoryList": [
+        {
+          "categoryId": 138046,
+          "categoryName": "三国",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        },
+        {
+          "categoryId": 138047,
+          "categoryName": "二次元",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        },
+        {
+          "categoryId": 138048,
+          "categoryName": "西游",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        },
+        {
+          "categoryId": 138049,
+          "categoryName": "仙侠",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        },
+        {
+          "categoryId": 138050,
+          "categoryName": "热血",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        },
+        {
+          "categoryId": 138051,
+          "categoryName": "动漫",
+          "iconUrl": "",
+          "parentCategoryId": 138,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_webgame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 150,
+      "categoryName": "军事战争",
+      "childCategoryList": [
+        {
+          "categoryId": 139035,
+          "categoryName": "国战",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        },
+        {
+          "categoryId": 139036,
+          "categoryName": "飞行射击",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        },
+        {
+          "categoryId": 139037,
+          "categoryName": "坦克",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        },
+        {
+          "categoryId": 139038,
+          "categoryName": "枪战",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        },
+        {
+          "categoryId": 139039,
+          "categoryName": "海战",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        },
+        {
+          "categoryId": 139040,
+          "categoryName": "合金弹头",
+          "iconUrl": "",
+          "parentCategoryId": 139,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_wargame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 151,
+      "categoryName": "动作冒险",
+      "childCategoryList": [
+        {
+          "categoryId": 140037,
+          "categoryName": "跑酷",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        },
+        {
+          "categoryId": 140038,
+          "categoryName": "格斗",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        },
+        {
+          "categoryId": 140039,
+          "categoryName": "动作",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        },
+        {
+          "categoryId": 140040,
+          "categoryName": "横版",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        },
+        {
+          "categoryId": 140041,
+          "categoryName": "闯关",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        },
+        {
+          "categoryId": 140042,
+          "categoryName": "街机",
+          "iconUrl": "",
+          "parentCategoryId": 140,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_actiongame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 152,
+      "categoryName": "体育竞速",
+      "childCategoryList": [
+        {
+          "categoryId": 141037,
+          "categoryName": "足球",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        },
+        {
+          "categoryId": 141038,
+          "categoryName": "篮球",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        },
+        {
+          "categoryId": 141039,
+          "categoryName": "摩托",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        },
+        {
+          "categoryId": 141040,
+          "categoryName": "赛车",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        },
+        {
+          "categoryId": 141041,
+          "categoryName": "台球",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        },
+        {
+          "categoryId": 141042,
+          "categoryName": "运动",
+          "iconUrl": "",
+          "parentCategoryId": 141,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://cms.gtimg.com/android_cms/fk/7ba18d7ff23753c9533879c2b6c1c122.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 153,
+      "categoryName": "棋牌中心",
+      "childCategoryList": [
+        {
+          "categoryId": 142021,
+          "categoryName": "斗地主",
+          "iconUrl": "",
+          "parentCategoryId": 142,
+          "reqType": -2
+        },
+        {
+          "categoryId": 142022,
+          "categoryName": "棋类",
+          "iconUrl": "",
+          "parentCategoryId": 142,
+          "reqType": -2
+        },
+        {
+          "categoryId": 142023,
+          "categoryName": "麻将",
+          "iconUrl": "",
+          "parentCategoryId": 142,
+          "reqType": -2
+        },
+        {
+          "categoryId": 142025,
+          "categoryName": "纸牌",
+          "iconUrl": "",
+          "parentCategoryId": 142,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_cardgame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 154,
+      "categoryName": "经营策略",
+      "childCategoryList": [
+        {
+          "categoryId": 144031,
+          "categoryName": "策略",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        },
+        {
+          "categoryId": 144032,
+          "categoryName": "塔防",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        },
+        {
+          "categoryId": 144033,
+          "categoryName": "经营",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        },
+        {
+          "categoryId": 144034,
+          "categoryName": "模拟",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        },
+        {
+          "categoryId": 144035,
+          "categoryName": "养成",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        },
+        {
+          "categoryId": 144036,
+          "categoryName": "沙盘",
+          "iconUrl": "",
+          "parentCategoryId": 144,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_simulaitiongame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 155,
+      "categoryName": "角色扮演",
+      "childCategoryList": [
+        {
+          "categoryId": 145171,
+          "categoryName": "卡牌",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        },
+        {
+          "categoryId": 145172,
+          "categoryName": "回合",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        },
+        {
+          "categoryId": 145173,
+          "categoryName": "RPG",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        },
+        {
+          "categoryId": 145174,
+          "categoryName": "武侠",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        },
+        {
+          "categoryId": 145175,
+          "categoryName": "魔幻",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        },
+        {
+          "categoryId": 145176,
+          "categoryName": "多人在线",
+          "iconUrl": "",
+          "parentCategoryId": 145,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_rolegame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 156,
+      "categoryName": "电子竞技",
+      "childCategoryList": [
+        {
+          "categoryId": 146013,
+          "categoryName": "MOBA",
+          "iconUrl": "",
+          "parentCategoryId": 146,
+          "reqType": -2
+        },
+        {
+          "categoryId": 146014,
+          "categoryName": "射击",
+          "iconUrl": "",
+          "parentCategoryId": 146,
+          "reqType": -2
+        },
+        {
+          "categoryId": 146015,
+          "categoryName": "争霸",
+          "iconUrl": "",
+          "parentCategoryId": 146,
+          "reqType": -2
+        },
+        {
+          "categoryId": 146016,
+          "categoryName": "音乐节奏",
+          "iconUrl": "",
+          "parentCategoryId": 146,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_copetitiongame.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    },
+    {
+      "categoryId": 157,
+      "categoryName": "特色分类",
+      "childCategoryList": [
+        {
+          "categoryId": 147001,
+          "categoryName": "烧脑",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        },
+        {
+          "categoryId": 147002,
+          "categoryName": "手残勿点",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        },
+        {
+          "categoryId": 147003,
+          "categoryName": "时间杀手",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        },
+        {
+          "categoryId": 147004,
+          "categoryName": "魔性",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        },
+        {
+          "categoryId": 147005,
+          "categoryName": "生存",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        },
+        {
+          "categoryId": 147006,
+          "categoryName": "有毒",
+          "iconUrl": "",
+          "parentCategoryId": 147,
+          "reqType": -2
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_special.png",
+      "parentCategoryId": -2,
+      "reqType": -2
+    }
+
+  ],
+  "softwareCategory": [
+    {
+      "categoryId": 121,
+      "categoryName": "视频",
+      "childCategoryList": [
+        {
+          "categoryId": 121017,
+          "categoryName": "在线视频",
+          "iconUrl": "",
+          "parentCategoryId": 121,
+          "reqType": -1
+        },
+        {
+          "categoryId": 121018,
+          "categoryName": "直播",
+          "iconUrl": "",
+          "parentCategoryId": 121,
+          "reqType": -1
+        },
+        {
+          "categoryId": 121019,
+          "categoryName": "播放器",
+          "iconUrl": "",
+          "parentCategoryId": 121,
+          "reqType": -1
+        },
+        {
+          "categoryId": 121020,
+          "categoryName": "视频制作",
+          "iconUrl": "",
+          "parentCategoryId": 121,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_video.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 122,
+      "categoryName": "生活",
+      "childCategoryList": [
+        {
+          "categoryId": 122043,
+          "categoryName": "美食外卖",
+          "iconUrl": "",
+          "parentCategoryId": 122,
+          "reqType": -1
+        },
+        {
+          "categoryId": 122044,
+          "categoryName": "生活服务",
+          "iconUrl": "",
+          "parentCategoryId": 122,
+          "reqType": -1
+        },
+        {
+          "categoryId": 122045,
+          "categoryName": "求职招聘",
+          "iconUrl": "",
+          "parentCategoryId": 122,
+          "reqType": -1
+        },
+        {
+          "categoryId": 122046,
+          "categoryName": "住房装修",
+          "iconUrl": "",
+          "parentCategoryId": 122,
+          "reqType": -1
+        },
+        {
+          "categoryId": 122047,
+          "categoryName": "汽车生活",
+          "iconUrl": "",
+          "parentCategoryId": 122,
+          "reqType": -1
+        },
+        {
+          "categoryId": 122048,
+          "categoryName": "购票服务",
+          "iconUrl": "",
+          "parentCategoryId": 122,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_life.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 123,
+      "categoryName": "购物",
+      "childCategoryList": [
+        {
+          "categoryId": 123025,
+          "categoryName": "网上商城",
+          "iconUrl": "",
+          "parentCategoryId": 123,
+          "reqType": -1
+        },
+        {
+          "categoryId": 123026,
+          "categoryName": "海淘",
+          "iconUrl": "",
+          "parentCategoryId": 123,
+          "reqType": -1
+        },
+        {
+          "categoryId": 123027,
+          "categoryName": "导购推荐",
+          "iconUrl": "",
+          "parentCategoryId": 123,
+          "reqType": -1
+        },
+        {
+          "categoryId": 123028,
+          "categoryName": "团购特卖",
+          "iconUrl": "",
+          "parentCategoryId": 123,
+          "reqType": -1
+        },
+        {
+          "categoryId": 123029,
+          "categoryName": "支付",
+          "iconUrl": "",
+          "parentCategoryId": 123,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_shopping.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 124,
+      "categoryName": "工具",
+      "childCategoryList": [
+        {
+          "categoryId": 124034,
+          "categoryName": "浏览器",
+          "iconUrl": "",
+          "parentCategoryId": 124,
+          "reqType": -1
+        },
+        {
+          "categoryId": 124035,
+          "categoryName": "输入法",
+          "iconUrl": "",
+          "parentCategoryId": 124,
+          "reqType": -1
+        },
+        {
+          "categoryId": 124036,
+          "categoryName": "WiFi",
+          "iconUrl": "",
+          "parentCategoryId": 124,
+          "reqType": -1
+        },
+        {
+          "categoryId": 124037,
+          "categoryName": "生活工具",
+          "iconUrl": "",
+          "parentCategoryId": 124,
+          "reqType": -1
+        },
+        {
+          "categoryId": 124038,
+          "categoryName": "通讯工具",
+          "iconUrl": "",
+          "parentCategoryId": 124,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_tool.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 125,
+      "categoryName": "理财",
+      "childCategoryList": [
+        {
+          "categoryId": 125031,
+          "categoryName": "记账钱包",
+          "iconUrl": "",
+          "parentCategoryId": 125,
+          "reqType": -1
+        },
+        {
+          "categoryId": 125032,
+          "categoryName": "投资",
+          "iconUrl": "",
+          "parentCategoryId": 125,
+          "reqType": -1
+        },
+        {
+          "categoryId": 125033,
+          "categoryName": "贷款",
+          "iconUrl": "",
+          "parentCategoryId": 125,
+          "reqType": -1
+        },
+        {
+          "categoryId": 125034,
+          "categoryName": "手机银行",
+          "iconUrl": "",
+          "parentCategoryId": 125,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_money.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 126,
+      "categoryName": "摄影",
+      "childCategoryList": [
+        {
+          "categoryId": 126037,
+          "categoryName": "图片美化",
+          "iconUrl": "",
+          "parentCategoryId": 126,
+          "reqType": -1
+        },
+        {
+          "categoryId": 126038,
+          "categoryName": "相机",
+          "iconUrl": "",
+          "parentCategoryId": 126,
+          "reqType": -1
+        },
+        {
+          "categoryId": 126039,
+          "categoryName": "相册图库",
+          "iconUrl": "",
+          "parentCategoryId": 126,
+          "reqType": -1
+        },
+        {
+          "categoryId": 126040,
+          "categoryName": "图片社区",
+          "iconUrl": "",
+          "parentCategoryId": 126,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_camera.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 127,
+      "categoryName": "音乐",
+      "childCategoryList": [
+        {
+          "categoryId": 127036,
+          "categoryName": "在线音乐",
+          "iconUrl": "",
+          "parentCategoryId": 127,
+          "reqType": -1
+        },
+        {
+          "categoryId": 127037,
+          "categoryName": "电台",
+          "iconUrl": "",
+          "parentCategoryId": 127,
+          "reqType": -1
+        },
+        {
+          "categoryId": 127038,
+          "categoryName": "K歌",
+          "iconUrl": "",
+          "parentCategoryId": 127,
+          "reqType": -1
+        },
+        {
+          "categoryId": 127039,
+          "categoryName": "个性铃声",
+          "iconUrl": "",
+          "parentCategoryId": 127,
+          "reqType": -1
+        },
+        {
+          "categoryId": 127040,
+          "categoryName": "乐器",
+          "iconUrl": "",
+          "parentCategoryId": 127,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_music.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 128,
+      "categoryName": "阅读",
+      "childCategoryList": [
+        {
+          "categoryId": 128049,
+          "categoryName": "新闻资讯",
+          "iconUrl": "",
+          "parentCategoryId": 128,
+          "reqType": -1
+        },
+        {
+          "categoryId": 128050,
+          "categoryName": "小说书籍",
+          "iconUrl": "",
+          "parentCategoryId": 128,
+          "reqType": -1
+        },
+        {
+          "categoryId": 128051,
+          "categoryName": "漫画",
+          "iconUrl": "",
+          "parentCategoryId": 128,
+          "reqType": -1
+        },
+        {
+          "categoryId": 128052,
+          "categoryName": "报刊杂志",
+          "iconUrl": "",
+          "parentCategoryId": 128,
+          "reqType": -1
+        },
+        {
+          "categoryId": 128053,
+          "categoryName": "百科问答",
+          "iconUrl": "",
+          "parentCategoryId": 128,
+          "reqType": -1
+        },
+        {
+          "categoryId": 128054,
+          "categoryName": "八卦段子",
+          "iconUrl": "",
+          "parentCategoryId": 128,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_read.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 129,
+      "categoryName": "社交",
+      "childCategoryList": [
+        {
+          "categoryId": 129028,
+          "categoryName": "聊天交友",
+          "iconUrl": "",
+          "parentCategoryId": 129,
+          "reqType": -1
+        },
+        {
+          "categoryId": 129029,
+          "categoryName": "婚恋相亲",
+          "iconUrl": "",
+          "parentCategoryId": 129,
+          "reqType": -1
+        },
+        {
+          "categoryId": 129030,
+          "categoryName": "社区",
+          "iconUrl": "",
+          "parentCategoryId": 129,
+          "reqType": -1
+        },
+        {
+          "categoryId": 129031,
+          "categoryName": "微博空间",
+          "iconUrl": "",
+          "parentCategoryId": 129,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_social.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 130,
+      "categoryName": "旅游",
+      "childCategoryList": [
+        {
+          "categoryId": 130016,
+          "categoryName": "旅游服务",
+          "iconUrl": "",
+          "parentCategoryId": 130,
+          "reqType": -1
+        },
+        {
+          "categoryId": 130017,
+          "categoryName": "旅行攻略",
+          "iconUrl": "",
+          "parentCategoryId": 130,
+          "reqType": -1
+        },
+        {
+          "categoryId": 130018,
+          "categoryName": "周边游",
+          "iconUrl": "",
+          "parentCategoryId": 130,
+          "reqType": -1
+        },
+        {
+          "categoryId": 130019,
+          "categoryName": "旅行住宿",
+          "iconUrl": "",
+          "parentCategoryId": 130,
+          "reqType": -1
+        },
+        {
+          "categoryId": 130020,
+          "categoryName": "旅行工具",
+          "iconUrl": "",
+          "parentCategoryId": 130,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_travel.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 131,
+      "categoryName": "办公",
+      "childCategoryList": [
+        {
+          "categoryId": 131016,
+          "categoryName": "办公软件",
+          "iconUrl": "",
+          "parentCategoryId": 131,
+          "reqType": -1
+        },
+        {
+          "categoryId": 131017,
+          "categoryName": "笔记",
+          "iconUrl": "",
+          "parentCategoryId": 131,
+          "reqType": -1
+        },
+        {
+          "categoryId": 131018,
+          "categoryName": "邮箱",
+          "iconUrl": "",
+          "parentCategoryId": 131,
+          "reqType": -1
+        },
+        {
+          "categoryId": 131019,
+          "categoryName": "效率管理",
+          "iconUrl": "",
+          "parentCategoryId": 131,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_office.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 132,
+      "categoryName": "健康",
+      "childCategoryList": [
+        {
+          "categoryId": 132005,
+          "categoryName": "运动健身",
+          "iconUrl": "",
+          "parentCategoryId": 132,
+          "reqType": -1
+        },
+        {
+          "categoryId": 132006,
+          "categoryName": "医疗用药",
+          "iconUrl": "",
+          "parentCategoryId": 132,
+          "reqType": -1
+        },
+        {
+          "categoryId": 132007,
+          "categoryName": "健康养生",
+          "iconUrl": "",
+          "parentCategoryId": 132,
+          "reqType": -1
+        },
+        {
+          "categoryId": 132008,
+          "categoryName": "经期避孕",
+          "iconUrl": "",
+          "parentCategoryId": 132,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_health.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 133,
+      "categoryName": "系统",
+      "childCategoryList": [
+        {
+          "categoryId": 133026,
+          "categoryName": "垃圾清理",
+          "iconUrl": "",
+          "parentCategoryId": 133,
+          "reqType": -1
+        },
+        {
+          "categoryId": 133027,
+          "categoryName": "安全",
+          "iconUrl": "",
+          "parentCategoryId": 133,
+          "reqType": -1
+        },
+        {
+          "categoryId": 133028,
+          "categoryName": "电池管理",
+          "iconUrl": "",
+          "parentCategoryId": 133,
+          "reqType": -1
+        },
+        {
+          "categoryId": 133029,
+          "categoryName": "文件管理",
+          "iconUrl": "",
+          "parentCategoryId": 133,
+          "reqType": -1
+        },
+        {
+          "categoryId": 133030,
+          "categoryName": "Root",
+          "iconUrl": "",
+          "parentCategoryId": 133,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_system.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 134,
+      "categoryName": "美化",
+      "childCategoryList": [
+        {
+          "categoryId": 134016,
+          "categoryName": "桌面主题",
+          "iconUrl": "",
+          "parentCategoryId": 134,
+          "reqType": -1
+        },
+        {
+          "categoryId": 134017,
+          "categoryName": "锁屏壁纸",
+          "iconUrl": "",
+          "parentCategoryId": 134,
+          "reqType": -1
+        },
+        {
+          "categoryId": 134018,
+          "categoryName": "字体",
+          "iconUrl": "",
+          "parentCategoryId": 134,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_beauty.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 135,
+      "categoryName": "出行",
+      "childCategoryList": [
+        {
+          "categoryId": 135013,
+          "categoryName": "地图导航",
+          "iconUrl": "",
+          "parentCategoryId": 135,
+          "reqType": -1
+        },
+        {
+          "categoryId": 135014,
+          "categoryName": "租车打车",
+          "iconUrl": "",
+          "parentCategoryId": 135,
+          "reqType": -1
+        },
+        {
+          "categoryId": 135015,
+          "categoryName": "航班",
+          "iconUrl": "",
+          "parentCategoryId": 135,
+          "reqType": -1
+        },
+        {
+          "categoryId": 135016,
+          "categoryName": "公交地铁",
+          "iconUrl": "",
+          "parentCategoryId": 135,
+          "reqType": -1
+        },
+        {
+          "categoryId": 135017,
+          "categoryName": "火车票",
+          "iconUrl": "",
+          "parentCategoryId": 135,
+          "reqType": -1
+        },
+        {
+          "categoryId": 135018,
+          "categoryName": "酒店",
+          "iconUrl": "",
+          "parentCategoryId": 135,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_traffic.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    },
+    {
+      "categoryId": 136,
+      "categoryName": "教育",
+      "childCategoryList": [
+        {
+          "categoryId": 136007,
+          "categoryName": "在线学堂",
+          "iconUrl": "",
+          "parentCategoryId": 136,
+          "reqType": -1
+        },
+        {
+          "categoryId": 136008,
+          "categoryName": "考试",
+          "iconUrl": "",
+          "parentCategoryId": 136,
+          "reqType": -1
+        },
+        {
+          "categoryId": 136009,
+          "categoryName": "出国留学",
+          "iconUrl": "",
+          "parentCategoryId": 136,
+          "reqType": -1
+        },
+        {
+          "categoryId": 136010,
+          "categoryName": "语言学习",
+          "iconUrl": "",
+          "parentCategoryId": 136,
+          "reqType": -1
+        },
+        {
+          "categoryId": 136011,
+          "categoryName": "儿童教育",
+          "iconUrl": "",
+          "parentCategoryId": 136,
+          "reqType": -1
+        },
+        {
+          "categoryId": 136012,
+          "categoryName": "专业学习",
+          "iconUrl": "",
+          "parentCategoryId": 136,
+          "reqType": -1
+        }
+      ],
+      "iconUrl": "http://southpole-1252725436.cosgz.myqcloud.com/categoryicon/icon_sort_education.png",
+      "parentCategoryId": -1,
+      "reqType": -1
+    }
+  ]
+}

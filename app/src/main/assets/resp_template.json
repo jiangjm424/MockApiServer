@@ -1,0 +1,15 @@
+{
+  "head": {
+    "ret": 0,
+    "cmd": "getTopPage",
+    "seq": 4,
+    "version": "v1",
+    "timeStamp": 1603701302,
+    "errorMsg": "OK"
+  },
+  "body": {
+    TEMPLATE_DATA
+    "errorMsg": "",
+    "ret": 0
+  }
+}
