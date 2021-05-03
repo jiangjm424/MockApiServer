@@ -1,6 +1,7 @@
 package com.grand.mockapiserver.core
 
 import android.content.Context
+import android.os.Environment
 import android.util.Log
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
@@ -13,6 +14,7 @@ import okhttp3.mockwebserver.RecordedRequest
 import okhttp3.tls.HandshakeCertificates
 import okhttp3.tls.HeldCertificate
 import org.json.JSONObject
+import java.io.File
 import java.net.InetAddress
 import java.nio.charset.StandardCharsets.UTF_8
 import java.util.concurrent.CountDownLatch
@@ -50,7 +52,7 @@ constructor(
                 when {
                     //模拟分页加载
                     request.path!!.endsWith("/getTopPage") -> {
-                        val count = requestCount[request.path!!]?:0
+                        val count = requestCount[request.path!!] ?: 0
                         return if (count <= 2) {
                             return configResponse("card_all_for_test.json")
                         } else {
@@ -80,7 +82,8 @@ constructor(
                     }
 
                 }
-                return MockResponse().setResponseCode(404)
+                return configLocalFileResponse(request.path!!)
+                    ?: MockResponse().setResponseCode(404)
             }
         }
         server.dispatcher = dispatcher
@@ -97,6 +100,41 @@ constructor(
 
     fun getBaseUrl(): String {
         return "https://localhost:6878/"
+    }
+
+    /**
+     * 这里面输入请求的全路径，我们过滤到最后一作为文件名
+     * 此文件会放到手机的download/mock/目录下
+     * eg:
+     * https://localhost:6878/v1/home/top
+     * 则我们会在手机上加载download/mock/top.json的内容
+     */
+    private fun configLocalFileResponse(path: String): MockResponse? {
+        val fileName = path.substring(path.lastIndexOf("/") + 1) + ".json"
+        val file = File(
+            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
+            "mock" + File.separator + fileName
+        )
+        Log.i(TAG,"path: $path, file:${file.absoluteFile}")
+        return respFromFile(file)
+    }
+
+    private fun respFromFile(file: File): MockResponse? {
+        file.takeIf {
+            it.exists()
+        }?.also { f ->
+            val resp = f.bufferedReader().use { reader -> reader.readText() }
+            val template =
+                context.assets.open("resp_template.json").bufferedReader().use { reader -> reader.readText() }
+            val body = template.replace("TEMPLATE_DATA", "\"data\":$resp,")
+
+            return MockResponse().setResponseCode(200)
+                .addHeader("Content-Type", "application/json; charset=utf-8")
+                .addHeader("Cache-Control", "no-cache")
+                .setBody(body)
+        }
+        Log.i(TAG,"${file.name} not exit, return null file")
+        return null
     }
 
     private fun configResponse(fileName: String): MockResponse {

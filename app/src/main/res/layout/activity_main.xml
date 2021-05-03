@@ -7,9 +7,14 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_margin="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="这里面输入请求的全路径，我们过滤到最后一作为文件名\n
+     * 此文件会放到手机的download/mock/目录下\n
+     * eg:\n
+     * https://localhost:6878/v1/home/top\n
+     * 则我们会在手机上加载download/mock/top.json的内容"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
