@@ -15,12 +15,12 @@ import com.grand.mockapiserver.R
 
 class MockWebServerService : Service() {
 
-    private lateinit var appMockWebServer: MockWebServerInApp
+    private lateinit var appMockWebServer: MockWebServerInApp2
 
     override fun onCreate() {
         super.onCreate()
         Log.v("MockWebServerService", "onCreate .......")
-        appMockWebServer = MockWebServerInApp(this, Gson())
+        appMockWebServer = MockWebServerInApp2(this, Gson())
         appMockWebServer.start()
     }
 
