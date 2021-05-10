@@ -32,7 +32,7 @@ constructor(
 
 
     fun start() {
-        server.dispatcher = RequestDispatcher()
+        server.dispatcher = RequestDispatcher(context)
         val countDownLatch = CountDownLatch(1)
         GlobalScope.launch(Dispatchers.IO) {
             val handshakeCertificates = localhost

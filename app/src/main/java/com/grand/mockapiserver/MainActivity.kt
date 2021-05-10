@@ -21,24 +21,6 @@ class MainActivity : AppCompatActivity() {
             startService(Intent(this, MockWebServerService::class.java))
         }
 
-        var check = false
-        permissions.forEach {
-            if (ActivityCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED) {
-                check = true
-                return@forEach
-            }
-        }
-        if (check)
-            ActivityCompat.requestPermissions(this, permissions, 12)
     }
 
-    private val permissions = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE)
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-    }
 }
