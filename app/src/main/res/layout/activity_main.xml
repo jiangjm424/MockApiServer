@@ -7,17 +7,28 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/desc"
         android:layout_margin="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="这里面输入请求的全路径，我们过滤到最后一作为文件名\n
-     * 此文件会放到手机的download/mock/目录下\n
-     * eg:\n
-     * https://localhost:6878/v1/home/top\n
-     * 则我们会在手机上加载download/mock/top.json的内容"
+        android:text=" *
+ * 默认情况下去读取/sdcard/Android/data/package_name/files/mock/XXX.json并返回
+ *\n\n
+ * 另外，默认会先查看/sdcard/Android/data/package_name/files/mock/_template.json\n
+ * 是否存在，\n如果存在则会以这个文件为模板，\n将XXX.json的文件内容替换掉template.json里面的TEMPLATE_DATA
+\n比如模板文件：
+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/desc"
+        app:layout_constraintEnd_toEndOf="@id/desc"
+        app:layout_constraintTop_toBottomOf="@id/desc"
+        android:src="@drawable/template"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

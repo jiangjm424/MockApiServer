@@ -66,4 +66,5 @@ abstract class AbsMockServer(protected val context: Context, protected val gson:
     }
 
     abstract fun configResponse(fileName: String?, count: Int): MockResponse?
+
 }

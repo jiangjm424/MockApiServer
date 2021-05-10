@@ -6,6 +6,15 @@ import com.google.gson.Gson
 import okhttp3.mockwebserver.MockResponse
 import java.io.File
 
+/**
+ * 模拟服务响应包数据的创建
+ *
+ * 默认情况下该类会去读取/sdcard/Android/data/package_name/files/mock/XXX.json并返回
+ *
+ * 另外，该类默认会先查看/sdcard/Android/data/package_name/files/mock/_template.json
+ * 是否存在，如果存在则会以这个文件为模板，将XXX.json的文件内容替换掉template.json里面的TEMPLATE_DATA
+ * @constructor
+ */
 class DefaultMockServer(context: Context, gson: Gson = Gson()) : AbsMockServer(context, gson) {
     override fun configResponse(fileName: String?, count: Int): MockResponse? {
         val file = File(context.getExternalFilesDir(""),
@@ -19,13 +28,23 @@ class DefaultMockServer(context: Context, gson: Gson = Gson()) : AbsMockServer(c
             it.exists()
         }?.also { f ->
             val resp = f.bufferedReader().use { reader -> reader.readText() }
-
+            val template = readTemplateOrNull()
+            val body = template?.replace("TEMPLATE_DATA", "$resp") ?: resp
             return MockResponse().setResponseCode(200)
                     .addHeader("Content-Type", "application/json; charset=utf-8")
                     .addHeader("Cache-Control", "no-cache")
-                    .setBody(resp)
+                    .setBody(body)
         }
         Log.i(TAG, "${file.name} not exit, return null file")
+        return null
+    }
+    private fun readTemplateOrNull():String? {
+        val file = File(context.getExternalFilesDir(""),
+                "mock" + File.separator + "_template.json"
+        )
+        file.takeIf { it.exists() }?.also {
+            return it.bufferedReader().use { reader -> reader.readText() }
+        }
         return null
     }
 }
