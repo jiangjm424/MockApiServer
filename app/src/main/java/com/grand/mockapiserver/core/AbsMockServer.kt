@@ -33,8 +33,18 @@ abstract class AbsMockServer(protected val context: Context, protected val gson:
                 .build()
     }
 
+    private var serverRunning = false
+    private val serverRunnable = object : Runnable{
+        override fun run() {
+            while (serverRunning){
+                Thread.sleep(10000)
+                Log.i(TAG,"$this is running")
+            }
+        }
+    }
     private val requestCount = mutableMapOf<String, Int>()
     fun start() {
+        serverRunning = true
         server.dispatcher = this
         val countDownLatch = CountDownLatch(1)
         GlobalScope.launch(Dispatchers.IO) {
@@ -47,10 +57,12 @@ abstract class AbsMockServer(protected val context: Context, protected val gson:
         Log.i(TAG, "start mock server:$this")
         countDownLatch.await()
         Log.i(TAG, "start done mock server:$this")
+        Thread(serverRunnable,"mock_monitor").start()
     }
 
     fun stop() {
         server.shutdown()
+        serverRunning = false
         Log.i(TAG, "finish mock server:$this")
     }
 

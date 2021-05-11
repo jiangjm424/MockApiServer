@@ -15,7 +15,7 @@
  * 默认情况下去读取/sdcard/Android/data/package_name/files/mock/XXX.json并返回
  *\n\n
  * 另外，默认会先查看/sdcard/Android/data/package_name/files/mock/_template.json\n
- * 是否存在，\n如果存在则会以这个文件为模板，\n将XXX.json的文件内容替换掉template.json里面的TEMPLATE_DATA
+ * 是否存在，\n如果存在则会以这个文件为模板，\n将XXX.json的文件内容替换掉_template.json里面的TEMPLATE_DATA
 \n比如模板文件：
 "
         app:layout_constraintBottom_toBottomOf="parent"
