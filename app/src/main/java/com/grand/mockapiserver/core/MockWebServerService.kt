@@ -25,6 +25,10 @@ class MockWebServerService : Service() {
         appMockWebServer.start()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        appMockWebServer.stop()
+    }
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         val activityIntent = Intent(this, MainActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(application, 0, activityIntent, 0)
