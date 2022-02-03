@@ -11,7 +11,7 @@ import okhttp3.tls.HeldCertificate
 import java.net.InetAddress
 import java.util.concurrent.CountDownLatch
 
-
+@Deprecated(message = "no use again", replaceWith = ReplaceWith("user AbsMockServer instead"))
 class MockWebServerInApp2
 constructor(
     val context: Context,

@@ -1,15 +1,9 @@
 package com.grand.mockapiserver
 
-import android.Manifest
 import android.content.Intent
-import android.content.pm.PackageManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.core.app.ActivityCompat
+import androidx.appcompat.app.AppCompatActivity
 import com.grand.mockapiserver.core.MockWebServerService
-import java.security.Permission
-import java.security.Permissions
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

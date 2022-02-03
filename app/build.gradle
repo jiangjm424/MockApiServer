@@ -40,6 +40,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
+    implementation 'commons-io:commons-io:2.11.0'
+    
     testImplementation 'junit:junit:4.+'
     testImplementation "com.jraska.livedata:testing-ktx:1.0.0"  // Live Data Test Helper https://github.com/jraska/livedata-testing
     testImplementation "androidx.test:core:1.1.0"

@@ -4,6 +4,8 @@ import android.content.Context
 import android.util.Log
 import com.google.gson.Gson
 import okhttp3.mockwebserver.MockResponse
+import okio.Buffer
+import org.apache.commons.io.IOUtils
 import java.io.File
 
 /**
@@ -16,14 +18,35 @@ import java.io.File
  * @constructor
  */
 class DefaultMockServer(context: Context, gson: Gson = Gson()) : AbsMockServer(context, gson) {
+
     override fun configResponse(fileName: String?, count: Int): MockResponse? {
-        val file = File(context.getExternalFilesDir(""),
-                "mock" + File.separator + fileName
-        )
-        return respFromFile(file)
+        val gsonFile =
+            File(context.getExternalFilesDir(""), "mock" + File.separator + fileName + ".json")
+        if (gsonFile.exists()) {
+            return respFromJsonFile(gsonFile)
+        }
+        val pbFile =
+            File(context.getExternalFilesDir(""), "mock" + File.separator + fileName + ".pb")
+        if (pbFile.exists()) {
+            return respFromProto(pbFile)
+        }
+        return null
     }
 
-    private fun respFromFile(file: File): MockResponse? {
+    private fun respFromProto(file: File): MockResponse? {
+        val aab = file.inputStream().use {
+            IOUtils.toByteArray(it)
+        }
+        return Buffer().use {
+            it.write(aab)
+            MockResponse().setResponseCode(200)
+                .addHeader("Content-Type", "application/x-protobuf;charset=UTF-8")
+                .addHeader("Cache-Control", "no-cache")
+                .setBody(it)
+        }
+    }
+
+    private fun respFromJsonFile(file: File): MockResponse? {
         file.takeIf {
             it.exists()
         }?.also { f ->
@@ -31,16 +54,18 @@ class DefaultMockServer(context: Context, gson: Gson = Gson()) : AbsMockServer(c
             val template = readTemplateOrNull()
             val body = template?.replace("TEMPLATE_DATA", "$resp") ?: resp
             return MockResponse().setResponseCode(200)
-                    .addHeader("Content-Type", "application/json; charset=utf-8")
-                    .addHeader("Cache-Control", "no-cache")
-                    .setBody(body)
+                .addHeader("Content-Type", "application/json; charset=utf-8")
+                .addHeader("Cache-Control", "no-cache")
+                .setBody(body)
         }
         Log.i(TAG, "${file.name} not exit, return null file")
         return null
     }
-    private fun readTemplateOrNull():String? {
-        val file = File(context.getExternalFilesDir(""),
-                "mock" + File.separator + "_template.json"
+
+    private fun readTemplateOrNull(): String? {
+        val file = File(
+            context.getExternalFilesDir(""),
+            "mock" + File.separator + "_template.json"
         )
         file.takeIf { it.exists() }?.also {
             return it.bufferedReader().use { reader -> reader.readText() }

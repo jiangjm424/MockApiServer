@@ -71,7 +71,7 @@ abstract class AbsMockServer(protected val context: Context, protected val gson:
         Thread.sleep(1 * 1000)
         requestCount[request.path!!] = (requestCount[request.path!!] ?: 0) + 1
         val fileName = request.path?.let {
-            it.substring(it.lastIndexOf("/") + 1) + ".json"
+            it.substring(it.lastIndexOf("/") + 1)
         }
         return configResponse(fileName, requestCount[request.path!!] ?: 0)
                 ?: MockResponse().setResponseCode(404)

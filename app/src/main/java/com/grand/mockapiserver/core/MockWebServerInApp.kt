@@ -20,6 +20,7 @@ import java.nio.charset.StandardCharsets.UTF_8
 import java.util.concurrent.CountDownLatch
 
 
+@Deprecated(message = "no use again", replaceWith = ReplaceWith("user AbsMockServer instead"))
 class MockWebServerInApp
 constructor(
     val context: Context,

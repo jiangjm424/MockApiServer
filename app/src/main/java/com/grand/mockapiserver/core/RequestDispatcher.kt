@@ -7,7 +7,7 @@ import okhttp3.mockwebserver.Dispatcher
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.RecordedRequest
 import java.io.File
-
+@Deprecated(message = "no use again, it used in MockWebServerInApp", replaceWith = ReplaceWith("user AbsMockServer instead"))
 class RequestDispatcher(
         private val context: Context,
         private val responseBuilder: ResponseBuilder = DefaultResponseBuild(context)
