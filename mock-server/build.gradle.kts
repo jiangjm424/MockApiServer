@@ -1,4 +1,4 @@
-import jm.build.setupLibraryModule
+import jm.compile.setupLibraryModule
 
 plugins {
     id("com.android.library")

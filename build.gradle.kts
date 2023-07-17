@@ -1,6 +1,6 @@
-import jm.build.by
-import jm.build.groupId
-import jm.build.versionName
+import jm.compile.by
+import jm.compile.groupId
+import jm.compile.versionName
 import com.diffplug.gradle.spotless.SpotlessExtension
 import com.diffplug.gradle.spotless.SpotlessExtensionPredeclare
 import java.net.URL

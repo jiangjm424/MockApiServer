@@ -5,7 +5,6 @@ local.properties
 # Gradle
 .gradle
 build
-**/build
 
 # Intellij
 *.iml
