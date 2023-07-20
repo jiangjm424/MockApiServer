@@ -49,7 +49,7 @@ class HomeFragment : Fragment() {
             textView.text = it
         }
         textView.setOnClickListener {
-            homeViewModel.bb()
+            homeViewModel.test()
         }
         return root
     }

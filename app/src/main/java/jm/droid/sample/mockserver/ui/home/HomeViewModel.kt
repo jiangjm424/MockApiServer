@@ -40,6 +40,8 @@ class HomeViewModel : ViewModel() {
     fun test() {
         viewModelScope.launch {
             try {
+
+                Log.i("jiang", "api.test")
                 val bb = api.test2(MockReq("id-mock-req"))
                 Log.i("jiang", bb.toString())
             } catch (e: Exception) {

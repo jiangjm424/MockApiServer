@@ -27,6 +27,8 @@ import okhttp3.tls.HeldCertificate
 import okio.Buffer
 import java.net.InetAddress
 import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
+import kotlin.random.Random
 
 abstract class AbsMockServer(protected val context: Context) : Dispatcher() {
     companion object {
@@ -82,17 +84,19 @@ abstract class AbsMockServer(protected val context: Context) : Dispatcher() {
 
     override fun dispatch(request: RecordedRequest): MockResponse {
         Log.v(TAG, "got request ${request.path}")
-        Thread.sleep(1 * 1000)
         requestCount[request.path!!] = (requestCount[request.path!!] ?: 0) + 1
         val fileName = request.path?.let {
             it.substring(it.lastIndexOf("/") + 1)
         }
-        return mockResponse(request.path!!, request.body)
+        val res = mockResponse(request.path!!, request.body)
             ?: configResponse(
                 fileName,
                 requestCount[request.path!!] ?: 0,
             )
-            ?: MockResponse().setResponseCode(404)
+        res?.apply {
+            delayResponse(this)
+        }
+        return res ?: MockResponse().setResponseCode(404)
     }
 
     // 读文件的方案
@@ -100,4 +104,18 @@ abstract class AbsMockServer(protected val context: Context) : Dispatcher() {
 
     // 使用mock库直接在运行生成
     abstract fun mockResponse(path: String, param: Buffer): MockResponse?
+
+    //7成正常请求  2成有延迟 1成请求会超时  客户端收到timeout异常
+    private fun delayResponse(res: MockResponse) {
+        val random = Random(System.currentTimeMillis()).nextInt(100)
+        if (random < 70) {
+            return
+        } else if (random < 90) {
+            val time = Random(System.currentTimeMillis()).nextLong(1, 10)
+            res.setBodyDelay(time, TimeUnit.SECONDS)
+        } else {
+            res.setBodyDelay(20, TimeUnit.SECONDS)
+        }
+        Log.w(TAG,"delay response : ${res.getBodyDelay(TimeUnit.SECONDS)} second")
+    }
 }
