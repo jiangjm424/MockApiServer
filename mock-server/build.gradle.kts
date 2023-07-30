@@ -8,11 +8,12 @@ plugins {
 setupLibraryModule(name = "jm.droid.lib.server.server")
 
 dependencies {
-    implementation(libs.squareup.okhttp.mockserver)
-    implementation(libs.squareup.okhttp.tls)
     implementation(libs.apache.commons.io)
     implementation(libs.gson)
+    implementation(libs.squareup.okhttp.mockserver)
+    implementation(libs.squareup.okhttp.tls)
 
     testImplementation(libs.bundles.test.jvm)
+
     androidTestImplementation(libs.bundles.test.android)
 }

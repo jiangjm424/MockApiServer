@@ -34,23 +34,23 @@ setupAppModule(name = "jm.droid.sample.mockserver") {
 }
 
 dependencies {
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.core)
+    implementation(libs.androidx.lifecycle.livedata)
+    implementation(libs.androidx.lifecycle.viewmodel)
+    implementation(libs.androidx.navigation.fragment)
+    implementation(libs.androidx.navigation.ui)
+    implementation(libs.material)
+    implementation(libs.squareup.moshi.runtime)
+    implementation(libs.squareup.okhttp.logging)
+    implementation(libs.squareup.okhttp.runtime)
+    implementation(libs.squareup.retrofit.converter.moshi)
+    implementation(libs.squareup.retrofit.runtime)
 
     debugImplementation(project(":mock-server"))
 
-    implementation(libs.squareup.okhttp.runtime)
-    implementation(libs.squareup.okhttp.logging)
-    implementation(libs.squareup.retrofit.runtime)
-    implementation(libs.squareup.retrofit.converter.moshi)
-    implementation(libs.squareup.moshi.runtime)
-
-    implementation(libs.androidx.core)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.lifecycle.viewmodel)
-    implementation(libs.androidx.lifecycle.livedata)
-    implementation(libs.androidx.navigation.fragment)
-    implementation(libs.androidx.navigation.ui)
     testImplementation(libs.bundles.test.jvm)
+
     androidTestImplementation(libs.bundles.test.android)
 }
