@@ -1,18 +1,18 @@
 package jm.droid.lib.singleton;
 
-public abstract class Singleton<T> {
+public abstract class Singleton<P, T> {
 
     public Singleton() {
     }
 
     private volatile T mInstance;
 
-    protected abstract T create();
+    protected abstract T create(P param);
 
-    public final T get() {
+    public final T get(P param) {
         if (mInstance == null) {
             synchronized (this) {
-                if (mInstance == null) mInstance = create();
+                if (mInstance == null) mInstance = create(param);
             }
         }
         return mInstance;
