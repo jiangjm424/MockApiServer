@@ -8,6 +8,7 @@ plugins {
 setupLibraryModule(name = "jm.droid.lib.singleton")
 
 dependencies {
-    testImplementation(libs.bundles.test.jvm)
-    androidTestImplementation(libs.bundles.test.android)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.test.ext)
+    androidTestImplementation(libs.androidx.test.espresso)
 }

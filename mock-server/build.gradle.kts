@@ -5,7 +5,7 @@ plugins {
     id("kotlin-android")
 }
 
-setupLibraryModule(name = "jm.droid.lib.server.server")
+setupLibraryModule(name = "jm.droid.lib.server.server", publish = true, document = false)
 
 dependencies {
     implementation(libs.apache.commons.io)
@@ -13,7 +13,7 @@ dependencies {
     implementation(libs.squareup.okhttp.mockserver)
     implementation(libs.squareup.okhttp.tls)
 
-    testImplementation(libs.bundles.test.jvm)
-
-    androidTestImplementation(libs.bundles.test.android)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.test.ext)
+    androidTestImplementation(libs.androidx.test.espresso)
 }

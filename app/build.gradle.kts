@@ -50,7 +50,7 @@ dependencies {
 
     debugImplementation(project(":mock-server"))
 
-    testImplementation(libs.bundles.test.jvm)
-
-    androidTestImplementation(libs.bundles.test.android)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.test.ext)
+    androidTestImplementation(libs.androidx.test.espresso)
 }
