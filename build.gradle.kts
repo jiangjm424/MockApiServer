@@ -13,14 +13,14 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinTopLevelExtension
 
 buildscript {
     repositories {
+        google()
+        mavenCentral()
         maven {
             setUrl("https://maven.aliyun.com/repository/central")
         }
         maven {
             setUrl("https://maven.aliyun.com/repository/public")
         }
-        google()
-        mavenCentral()
     }
     dependencies {
         classpath(libs.gradlePlugin.android)
@@ -47,6 +47,8 @@ tasks.withType<DokkaMultiModuleTask>().configureEach {
 
 allprojects {
     repositories {
+        google()
+        mavenCentral()
         maven {
             setUrl("https://maven.aliyun.com/repository/central")
         }
@@ -56,8 +58,6 @@ allprojects {
         maven {
             setUrl("https://jitpack.io")
         }
-        google()
-        mavenCentral()
     }
 
     // Necessary to publish to Maven.

@@ -2,6 +2,7 @@
 include(
     "mock-server",
     "singleton",
+    "http-monitor",
 )
 
 // Private modules

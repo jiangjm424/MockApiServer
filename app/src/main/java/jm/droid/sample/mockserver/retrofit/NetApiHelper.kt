@@ -59,8 +59,9 @@ class NetApiHelper {
     }
 
     private val httpClient by lazy {
-        OkHttpClient.Builder()
-            .connectTimeout(10, TimeUnit.SECONDS)
+        val builder = OkHttpClient.Builder()
+        HttpMonitorUtil.httpMonitor(builder)
+        builder.connectTimeout(10, TimeUnit.SECONDS)
             .readTimeout(10, TimeUnit.SECONDS)
             .sslSocketFactory(createUnsafeSocketFactory(), unsafeTrustAllCerts[0])
             .hostnameVerifier { _, _ -> true }

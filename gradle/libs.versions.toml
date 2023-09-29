@@ -13,12 +13,18 @@ roborazzi = "1.2.0"
 moshi = "1.13.0"
 retrofit = "2.9.0"
 androidx-navigation = "2.5.3"
+room="2.5.0"
+org-jetbrains-kotlin-android = "1.8.0"
+material = "1.8.0"
+appcompat = "1.6.1"
+constraintlayout = "2.1.4"
 #add end
 
 [plugins]
 binaryCompatibility = "org.jetbrains.kotlinx.binary-compatibility-validator:0.13.2"
 dokka = "org.jetbrains.dokka:1.8.20"
 spotless = "com.diffplug.spotless:6.19.0"
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
 
 [libraries]
 gradlePlugin-android = "com.android.tools.build:gradle:8.0.2"
@@ -99,7 +105,8 @@ squareup-okhttp-okio = { group = "com.squareup.okhttp3", name = "okio", version 
 
 apache-commons-io = "commons-io:commons-io:2.11.0"
 gson = { group = "com.google.code.gson", name = "gson", version = "2.8.9" }
-
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 androidx-lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "androidx-lifecycle" }
 androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "androidx-navigation" }
 androidx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "androidx-navigation" }
@@ -109,6 +116,9 @@ androidx-fragment = { module = "androidx.fragment:fragment-ktx", version = "1.5.
 squareup-moshi-runtime = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi"}
 squareup-moshi-kapt = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshi"}
 github-agent-web = "com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx"
+com-google-android-material-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 #add end
 [bundles]
 test-jvm = [

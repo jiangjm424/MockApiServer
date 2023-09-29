@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name="jm.droid.lib.httpmonitor.ui.HttpMonitorActivity"
+            android:exported="false"
+            android:icon="@drawable/ic_http_monitor"
+            android:label="@string/title_activity_main"
+            android:roundIcon="@drawable/ic_http_monitor"
+            android:taskAffinity="com.http.monitor.${applicationId}"
+            android:theme="@style/Theme.HttpMonitor" />
+
+        <activity-alias
+            android:name="com.http.monitor.ActivityLauncher"
+            android:exported="true"
+            android:icon="@drawable/ic_http_monitor"
+            android:targetActivity="jm.droid.lib.httpmonitor.ui.HttpMonitorActivity"
+            android:taskAffinity="com.http.monitor.${applicationId}">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <provider
+            android:name=".core.HttpMonitorProvider"
+            android:authorities="${applicationId}.HttpMonitorProvider"
+            android:exported="false" />
+    </application>
+
+</manifest>
