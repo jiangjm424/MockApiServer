@@ -48,7 +48,8 @@ dependencies {
     implementation(libs.squareup.retrofit.converter.moshi)
     implementation(libs.squareup.retrofit.runtime)
 
-    debugImplementation("io.github.jiangjm424:view-db:0.0.4")
+//    debugImplementation("io.github.jiangjm424:view-db:0.0.4")
+//    debugImplementation("io.github.jiangjm424:http-monitor:+")
     debugImplementation(project(":mock-server"))
     debugImplementation(project(":http-monitor"))
 

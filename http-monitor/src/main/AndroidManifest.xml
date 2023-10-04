@@ -23,6 +23,9 @@
             </intent-filter>
         </activity-alias>
 
+        <activity android:theme="@style/Theme.HttpMonitor"
+            android:name=".ui.HttpDetailActivity"
+            android:exported="false" />
         <provider
             android:name=".core.HttpMonitorProvider"
             android:authorities="${applicationId}.HttpMonitorProvider"

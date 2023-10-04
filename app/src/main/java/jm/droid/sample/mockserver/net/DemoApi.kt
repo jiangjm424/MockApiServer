@@ -19,11 +19,19 @@ package jm.droid.sample.mockserver.net
 import jm.droid.sample.mockserver.dto.MockReq
 import jm.droid.sample.mockserver.dto.MockResp
 import retrofit2.http.Body
+import retrofit2.http.Headers
 import retrofit2.http.POST
 
 interface DemoApi {
     @POST("com/jm/test")
     suspend fun test(@Body req: MockReq): MockResp
+
     @POST("com/jm/test2")
+    @Headers(
+        value = [
+            "X-Foo: Bar",
+            "X-Ping: Pong"
+        ]
+    )
     suspend fun test2(@Body req: MockReq): MockResp
 }

@@ -28,7 +28,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
-    implementation("io.github.jiangjm424:smart-adapter:+")
+    implementation(libs.jmdroid.adapter)
     kapt(libs.androidx.room.compiler)
     testImplementation(libs.bundles.test.jvm)
     androidTestImplementation(libs.bundles.test.android)

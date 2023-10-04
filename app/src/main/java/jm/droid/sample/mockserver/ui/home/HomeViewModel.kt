@@ -44,8 +44,10 @@ class HomeViewModel : ViewModel() {
                 Log.i("jiang", "api.test")
                 val bb = api.test2(MockReq("id-mock-req"))
                 Log.i("jiang", bb.toString())
+                _text.value = bb.toString()
             } catch (e: Exception) {
                 Log.i("jiang","bbb")
+                _text.value = "${e.message}"
                 e.printStackTrace()
             }
         }

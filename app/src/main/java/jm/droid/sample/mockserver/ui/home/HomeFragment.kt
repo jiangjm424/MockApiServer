@@ -48,7 +48,7 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
-        textView.setOnClickListener {
+        binding.netRequest.setOnClickListener {
             homeViewModel.test()
         }
         return root

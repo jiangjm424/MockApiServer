@@ -18,6 +18,7 @@ org-jetbrains-kotlin-android = "1.8.0"
 material = "1.8.0"
 appcompat = "1.6.1"
 constraintlayout = "2.1.4"
+smartAdapter = "0.0.1"
 #add end
 
 [plugins]
@@ -84,6 +85,7 @@ robolectric = "org.robolectric:robolectric:4.10.3"
 roborazzi-core = { module = "io.github.takahirom.roborazzi:roborazzi", version.ref = "roborazzi" }
 roborazzi-junit = { module = "io.github.takahirom.roborazzi:roborazzi-junit-rule", version.ref = "roborazzi" }
 
+jmdroid-adapter = { module = "io.github.jiangjm424:smart-adapter", version.ref = "smartAdapter" }
 svg = "com.caverock:androidsvg-aar:1.4"
 
 

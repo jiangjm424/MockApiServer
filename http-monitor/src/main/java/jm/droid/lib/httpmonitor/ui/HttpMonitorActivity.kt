@@ -5,6 +5,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import jm.droid.lib.httpmonitor.databinding.ActivityHttpMonitorBinding
+import jm.droid.lib.samatadapter.EmptyCard
 import jm.droid.lib.samatadapter.ISmartAdapter
 
 class HttpMonitorActivity : AppCompatActivity() {
@@ -13,7 +14,7 @@ class HttpMonitorActivity : AppCompatActivity() {
     private val viewModel by viewModels<HttpMonitorViewModel>()
     private val adapter by lazy {
         ISmartAdapter.Builder.with(this)
-            .register(HttpSimpleDataCard())
+            .register(HttpSimpleDataCard()).emptyDelegate(EmptyCard())
             .build()
     }
 
@@ -28,6 +29,7 @@ class HttpMonitorActivity : AppCompatActivity() {
         viewModel.httpDatas.observe(this) {
             adapter.setData(it)
         }
-        viewModel.loadHttpData()
+        binding.clear.setOnClickListener { viewModel.clearAllHttpData() }
+        binding.refresh.setOnClickListener { viewModel.loadHttpData() }
     }
 }
