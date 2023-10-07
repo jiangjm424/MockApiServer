@@ -25,10 +25,12 @@ class HttpDetailActivity : AppCompatActivity() {
         viewModel.httpTitleDescList.observe(this) {
             adapter.setData(it)
         }
+        viewModel.httpId.observe(this) {
+            binding.appTitle.text = String.format(getString(R.string.app_http_detail_title, it))
+        }
         binding.httpDataDetailList.adapter = adapter.adapter
         binding.httpDataDetailList.layoutManager = LinearLayoutManager(this)
         val id = savedInstanceState?.getLong(HTTP_ID) ?: intent.getLongExtra(HTTP_ID, 0)
-        binding.appTitle.text = String.format(getString(R.string.app_http_detail_title, id))
         viewModel.loadHttpData(id)
     }
 

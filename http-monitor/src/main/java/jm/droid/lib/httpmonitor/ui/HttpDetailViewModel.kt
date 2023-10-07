@@ -14,6 +14,8 @@ import kotlinx.coroutines.launch
 
 class HttpDetailViewModel : ViewModel() {
     private val _httpData = MutableLiveData<HttpData>()
+    private val _httpId = MutableLiveData<Long>()
+    val httpId:LiveData<Long> = _httpId
 
     val httpTitleDescList: LiveData<List<TitleDescDataModel>> = _httpData.map {
         val ll = mutableListOf<TitleDescDataModel>()
@@ -42,6 +44,7 @@ class HttpDetailViewModel : ViewModel() {
 
     fun loadHttpData(httpId: Long) = viewModelScope.launch(Dispatchers.IO) {
         if (httpId <= 0) return@launch
+        _httpId.postValue(httpId)
         val data = HttpDataTool.httpDataDao.getHttpData(httpId)
         _httpData.postValue(data)
     }
