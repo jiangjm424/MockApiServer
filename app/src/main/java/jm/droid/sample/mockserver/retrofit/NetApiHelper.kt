@@ -21,50 +21,16 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import java.security.SecureRandom
-import java.security.cert.X509Certificate
 import java.util.concurrent.TimeUnit
-import javax.net.ssl.SSLContext
-import javax.net.ssl.SSLSocketFactory
-import javax.net.ssl.X509TrustManager
 
 class NetApiHelper {
-    private val unsafeTrustAllCerts = arrayOf<X509TrustManager>(
-        object : X509TrustManager {
-            override fun checkClientTrusted(
-                chain: Array<out X509Certificate>?,
-                authType: String?,
-            ) {
-            }
-
-            override fun checkServerTrusted(
-                chain: Array<out X509Certificate>?,
-                authType: String?,
-            ) {
-            }
-
-            override fun getAcceptedIssuers(): Array<X509Certificate> {
-                return arrayOf<X509Certificate>()
-            }
-        },
-    )
-
-    private fun createUnsafeSocketFactory(): SSLSocketFactory {
-        // Create a trust manager that does not validate certificate chains
-        // Install the all-trusting trust manager
-        val sslContext: SSLContext = SSLContext.getInstance("SSL")
-        sslContext.init(null, unsafeTrustAllCerts, SecureRandom())
-        // Create an ssl socket factory with our all-trusting manager
-        return sslContext.socketFactory
-    }
 
     private val httpClient by lazy {
         val builder = OkHttpClient.Builder()
         HttpMonitorUtil.httpMonitor(builder)
+        MockServerTool.config(builder)
         builder.connectTimeout(10, TimeUnit.SECONDS)
             .readTimeout(10, TimeUnit.SECONDS)
-            .sslSocketFactory(createUnsafeSocketFactory(), unsafeTrustAllCerts[0])
-            .hostnameVerifier { _, _ -> true }
             .build()
     }
     private val retrofit by lazy {

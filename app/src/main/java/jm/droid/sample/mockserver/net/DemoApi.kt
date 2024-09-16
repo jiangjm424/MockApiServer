@@ -29,6 +29,7 @@ interface DemoApi {
     @POST("com/jm/test2")
     @Headers(
         value = [
+            "mock:true",
             "X-Foo: Bar",
             "X-Ping: Pong"
         ]
