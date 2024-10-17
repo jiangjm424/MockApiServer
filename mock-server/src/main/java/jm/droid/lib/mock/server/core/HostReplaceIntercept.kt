@@ -12,7 +12,11 @@ class HostReplaceIntercept:Interceptor {
         val request = chain.request()
         val bMock = "true" == request.headers[HEADER_MOCK]
         val newRequest = if (bMock) {
-            val uri = request.url.newBuilder().host(InetAddress.getLocalHost().canonicalHostName).build()
+            val uri = request.url.newBuilder().apply {
+                host(InetAddress.getLocalHost().canonicalHostName)
+                scheme("https")
+                port(6878)
+            }.build()
             val builder = request.newBuilder().url(uri)
             builder.build()
         } else {
