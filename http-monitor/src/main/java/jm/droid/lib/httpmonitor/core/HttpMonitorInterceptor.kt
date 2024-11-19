@@ -7,6 +7,7 @@ import okhttp3.Response
 import okhttp3.internal.http.promisesBody
 import okio.Buffer
 import okio.GzipSource
+import org.json.JSONObject
 import java.io.EOFException
 import java.nio.charset.Charset
 import java.nio.charset.StandardCharsets
@@ -45,7 +46,9 @@ class HttpMonitorInterceptor : Interceptor {
                 val charset: Charset =
                     contentType?.charset(StandardCharsets.UTF_8) ?: StandardCharsets.UTF_8
                 if (requestBuffer.isProbablyUtf8()) {
-                    httpData.requestBodyDesc = requestBuffer.clone().readString(charset)
+                    httpData.requestBodyDesc = requestBuffer.clone().readString(charset).let {
+                        JSONObject(it).toString(4)
+                    }
                     httpData.requestContentLength = requestBody.contentLength()
                 } else {
                     httpData.requestBodyDesc =
@@ -105,7 +108,9 @@ class HttpMonitorInterceptor : Interceptor {
             if (!responseBuffer.isProbablyUtf8()) {
                 httpData.responseBodyDesc = "binary ${responseBuffer.size}-byte body omitted"
             } else if (contentLength != 0L) {
-                httpData.responseBodyDesc = responseBuffer.clone().readString(charset)
+                httpData.responseBodyDesc = responseBuffer.clone().readString(charset).let {
+                    JSONObject(it).toString(4)
+                }
             }
         }
         HttpDataTool.httpDataDao.putHttpData(httpData)
