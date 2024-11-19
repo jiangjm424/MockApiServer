@@ -3,7 +3,7 @@ import jm.compile.setupLibraryModule
 plugins {
     id("com.android.library")
     id("kotlin-android")
-    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
 }
 
 setupLibraryModule(name = "jm.droid.lib.httpmonitor")
@@ -29,7 +29,7 @@ dependencies {
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
     implementation(libs.jmdroid.adapter)
-    kapt(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler)
     testImplementation(libs.bundles.test.jvm)
     androidTestImplementation(libs.bundles.test.android)
 }

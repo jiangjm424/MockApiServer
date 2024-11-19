@@ -15,6 +15,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
         maven {
             setUrl("https://maven.aliyun.com/repository/central")
         }
@@ -35,6 +36,7 @@ plugins {
     alias(libs.plugins.binaryCompatibility)
     alias(libs.plugins.dokka)
     alias(libs.plugins.spotless)
+    alias(libs.plugins.ksp)
 }
 
 extensions.configure<ApiValidationExtension> {
