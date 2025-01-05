@@ -18,4 +18,8 @@ package jm.droid.lib.mock.server.core
 
 import okio.Buffer
 
-data class MockResponseWrapper(val type: String = AbsMockServer.TYPE_GSON, val buffer: Buffer)
+data class MockResponseWrapper(
+    val httpCode: Int = 200,
+    val type: String = AbsMockServer.TYPE_GSON,
+    val buffer: Buffer
+)

@@ -42,7 +42,7 @@ class DefaultMockServer(context: Context) : AbsMockServer(context) {
 
     override fun mockResponse(path: String, param: Buffer): MockResponse? {
         return mockFactory.create(path)?.generateResponse(param, iCorpus)?.let {
-            MockResponse().setResponseCode(200)
+            MockResponse().setResponseCode(it.httpCode)
                 .addHeader("Content-Type", it.type)
                 .addHeader("Cache-Control", "no-cache")
                 .setBody(it.buffer)
