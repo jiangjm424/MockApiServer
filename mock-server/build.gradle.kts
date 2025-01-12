@@ -12,6 +12,7 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.squareup.okhttp.mockserver)
     implementation(libs.squareup.okhttp.tls)
+    api(libs.okio)
 
     testImplementation(libs.bundles.test.jvm)
 
