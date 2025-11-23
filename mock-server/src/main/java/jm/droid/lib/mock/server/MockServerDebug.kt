@@ -1,7 +1,6 @@
 package jm.droid.lib.mock.server
 
 import android.annotation.SuppressLint
-import androidx.annotation.Keep
 import jm.droid.lib.mock.server.core.HostReplaceIntercept
 import okhttp3.OkHttpClient
 import java.security.SecureRandom
@@ -10,7 +9,6 @@ import javax.net.ssl.SSLContext
 import javax.net.ssl.SSLSocketFactory
 import javax.net.ssl.X509TrustManager
 
-@Keep
 class MockServerDebug {
     private val unsafeTrustAllCerts = arrayOf(DebugX509TrustManager())
     fun configOkHttpClient(builder: OkHttpClient.Builder) = builder.apply {

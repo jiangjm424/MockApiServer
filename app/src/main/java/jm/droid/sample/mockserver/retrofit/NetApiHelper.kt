@@ -27,7 +27,6 @@ class NetApiHelper {
 
     private val httpClient by lazy {
         val builder = OkHttpClient.Builder()
-        HttpMonitorUtil.httpMonitor(builder)
         MockServerTool.config(builder)
         builder.connectTimeout(10, TimeUnit.SECONDS)
             .readTimeout(10, TimeUnit.SECONDS)

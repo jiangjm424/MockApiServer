@@ -105,7 +105,7 @@ abstract class AbsMockServer(protected val context: Context) : Dispatcher() {
     // 使用mock库直接在运行生成
     abstract fun mockResponse(path: String, param: Buffer): MockResponse?
 
-    //7成正常请求  2成有延迟 1成请求会超时  客户端收到timeout异常
+    // 7成正常请求  2成有延迟 1成请求会超时  客户端收到timeout异常
     private fun delayResponse(res: MockResponse) {
         val random = Random(System.currentTimeMillis()).nextInt(100)
         if (random < 70) {
@@ -116,6 +116,6 @@ abstract class AbsMockServer(protected val context: Context) : Dispatcher() {
         } else {
             res.setBodyDelay(20, TimeUnit.SECONDS)
         }
-        Log.w(TAG,"delay response : ${res.getBodyDelay(TimeUnit.SECONDS)} second")
+        Log.w(TAG, "delay response : ${res.getBodyDelay(TimeUnit.SECONDS)} second")
     }
 }

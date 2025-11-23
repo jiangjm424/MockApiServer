@@ -18,4 +18,4 @@ package jm.droid.sample.mockserver.dto
 
 data class MockReq(val id: String)
 data class MockResp(val ret: Int, val errMsg: String, val data: TestData)
-data class TestData(val nick:String, val icon:String, val des:String)
+data class TestData(val nick: String, val icon: String, val des: String)

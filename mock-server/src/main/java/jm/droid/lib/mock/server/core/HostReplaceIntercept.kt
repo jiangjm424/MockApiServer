@@ -4,7 +4,7 @@ import okhttp3.Interceptor
 import okhttp3.Response
 import java.net.InetAddress
 
-class HostReplaceIntercept:Interceptor {
+class HostReplaceIntercept : Interceptor {
     companion object {
         private const val HEADER_MOCK = "mock"
     }

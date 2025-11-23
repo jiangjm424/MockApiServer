@@ -1,11 +1,11 @@
-import jm.compile.setupLibraryModule
+import jmdroid.androidLibrary
 
 plugins {
     id("com.android.library")
     id("kotlin-android")
 }
-
-setupLibraryModule(name = "jm.droid.lib.singleton")
+androidLibrary(name = "jm.droid.lib.singleton", config = true, publish = true) {
+}
 
 dependencies {
     testImplementation(libs.bundles.test.jvm)

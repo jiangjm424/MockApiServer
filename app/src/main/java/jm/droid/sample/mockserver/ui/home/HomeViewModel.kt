@@ -28,7 +28,6 @@ import kotlinx.coroutines.launch
 
 class HomeViewModel : ViewModel() {
 
-
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"
     }
@@ -40,17 +39,15 @@ class HomeViewModel : ViewModel() {
     fun test() {
         viewModelScope.launch {
             try {
-
                 Log.i("jiang", "api.test")
                 val bb = api.test2(MockReq("id-mock-req"))
                 Log.i("jiang", bb.toString())
                 _text.value = bb.toString()
             } catch (e: Exception) {
-                Log.i("jiang","bbb")
+                Log.i("jiang", "bbb")
                 _text.value = "${e.message}"
                 e.printStackTrace()
             }
         }
-
     }
 }

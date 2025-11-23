@@ -17,7 +17,7 @@
 package jm.droid.lib.mock.server.corpus
 
 interface ICorpusSets {
-    fun nickNames():List<String>?
+    fun nickNames(): List<String>?
     fun icons(): List<String>?
     fun images(): List<String>?
     fun titles(): List<String>?

@@ -2,7 +2,6 @@ package jm.droid.sample.mockserver.retrofit
 
 import okhttp3.OkHttpClient
 
-
 object MockServerTool {
     private const val class_name = "jm.droid.lib.mock.server.MockServerDebug"
     private val supported = try {

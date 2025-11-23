@@ -13,26 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import jm.compile.setupAppModule
+import jmdroid.androidApplication
 
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("jm.droid.plugin.httpmonitor")
 }
-setupAppModule(name = "jm.droid.sample.mockserver") {
+
+androidApplication("jm.droid.sample.mockserver") {
     buildTypes {
         release {
             isMinifyEnabled = true
             isShrinkResources = true
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro",
-            )
-            signingConfig = signingConfigs.getByName("debug")
+            proguardFiles("shrinker-rules.pro", "shrinker-rules-android.pro")
+            signingConfig = signingConfigs["debug"]
         }
     }
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true
+    }
 }
-
 dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
@@ -51,7 +53,7 @@ dependencies {
 //    debugImplementation("io.github.jiangjm424:view-db:0.0.4")
 //    debugImplementation("io.github.jiangjm424:http-monitor:+")
     debugImplementation(project(":mock-server"))
-    debugImplementation(project(":http-monitor"))
+//    debugImplementation(project(":http-monitor"))
 
     testImplementation(libs.bundles.test.jvm)
 

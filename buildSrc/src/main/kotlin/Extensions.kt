@@ -1,10 +1,13 @@
 @file:Suppress("NOTHING_TO_INLINE")
 
-package jm.compile
+package jmdroid
 
-import kotlin.math.pow
 import org.gradle.api.Project
 import org.gradle.api.provider.Property
+import org.gradle.api.provider.Provider
+import org.gradle.api.provider.SetProperty
+import kotlin.math.pow
+
 
 val Project.minSdk: Int
     get() = intProperty("minSdk")
@@ -16,10 +19,10 @@ val Project.compileSdk: Int
     get() = intProperty("compileSdk")
 
 val Project.groupId: String
-    get() = stringProperty("POM_GROUP_ID")
+    get() = stringProperty("GROUP")
 
 val Project.versionName: String
-    get() = stringProperty("POM_VERSION")
+    get() = stringProperty("VERSION_NAME")
 
 val Project.versionCode: Int
     get() = versionName
@@ -32,17 +35,20 @@ val Project.versionCode: Int
             (unit * 10.0.pow(2 * index + 1)).toInt()
         }
 
-val publicModules = listOf(
-    "mock-server",
-)
+private fun Project.intProperty(
+    name: String,
+    default: () -> Int = { error("unknown property: $name") },
+): Int = (properties[name] as String?)?.toInt() ?: default()
 
-private fun Project.intProperty(name: String): Int {
-    return (property(name) as String).toInt()
-}
+private fun Project.stringProperty(
+    name: String,
+    default: () -> String = { error("unknown property: $name") },
+): String = (properties[name] as String?) ?: default()
 
-private fun Project.stringProperty(name: String): String {
-    return property(name) as String
-}
+private fun Project.booleanProperty(
+    name: String,
+    default: () -> Boolean = { error("unknown property: $name") },
+): Boolean = (properties[name] as String?)?.toBooleanStrict() ?: default()
 
 private inline fun <T> List<T>.sumByIndexed(selector: (Int, T) -> Int): Int {
     var index = 0
@@ -52,5 +58,3 @@ private inline fun <T> List<T>.sumByIndexed(selector: (Int, T) -> Int): Int {
     }
     return sum
 }
-
-inline infix fun <T> Property<T>.by(value: T) = set(value)

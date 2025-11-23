@@ -1,12 +1,12 @@
-import jm.compile.setupLibraryModule
+import jmdroid.androidLibrary
 
 plugins {
     id("com.android.library")
     id("kotlin-android")
 }
 
-setupLibraryModule(name = "jm.droid.lib.server.server")
-
+androidLibrary(name = "jm.droid.lib.server.server", config = true, publish = true) {
+}
 dependencies {
     implementation(libs.apache.commons.io)
     implementation(libs.gson)
