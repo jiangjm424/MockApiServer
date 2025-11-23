@@ -1,7 +1,6 @@
 package jm.droid.lib.httpmonitor.db
 
 import androidx.room.ColumnInfo
-import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 class HttpSimpleData {

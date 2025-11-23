@@ -39,5 +39,4 @@ class HttpSimpleDataCard :
         view.requestTime.text = formatTime(item.requestTime ?: 0)
         view.method.text = item.method
     }
-
 }

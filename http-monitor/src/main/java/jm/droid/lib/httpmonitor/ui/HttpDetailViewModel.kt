@@ -1,6 +1,5 @@
 package jm.droid.lib.httpmonitor.ui
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -15,7 +14,7 @@ import kotlinx.coroutines.launch
 class HttpDetailViewModel : ViewModel() {
     private val _httpData = MutableLiveData<HttpData>()
     private val _httpId = MutableLiveData<Long>()
-    val httpId:LiveData<Long> = _httpId
+    val httpId: LiveData<Long> = _httpId
 
     val httpTitleDescList: LiveData<List<TitleDescDataModel>> = _httpData.map {
         val ll = mutableListOf<TitleDescDataModel>()
@@ -33,7 +32,7 @@ class HttpDetailViewModel : ViewModel() {
         ll.add(TitleDescDataModel("responseCode", "${it.responseCode}"))
         ll.add(TitleDescDataModel("responseTime", timestampToHuman(it.responseTime)))
         ll.add(TitleDescDataModel("responseBody", it.responseBodyDesc))
-        ll.add(TitleDescDataModel("responseContentLength", longToHuman(it.responseContentLength,"bytes")))
+        ll.add(TitleDescDataModel("responseContentLength", longToHuman(it.responseContentLength, "bytes")))
         ll.add(TitleDescDataModel("responseContentType", it.responseContentType))
         ll.add(TitleDescDataModel("responseHeaders", it.responseHeaders))
         ll.add(TitleDescDataModel("duration", longToHuman(it.duration, "ms")))

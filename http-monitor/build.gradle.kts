@@ -1,4 +1,4 @@
-import jm.compile.setupLibraryModule
+import jmdroid.androidLibrary
 
 plugins {
     id("com.android.library")
@@ -6,17 +6,9 @@ plugins {
     id("com.google.devtools.ksp")
 }
 
-setupLibraryModule(name = "jm.droid.lib.httpmonitor")
-android {
+androidLibrary(name = "jm.droid.lib.httpmonitor", config = true, publish = true) {
     buildFeatures {
         viewBinding = true
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
     }
 }
 

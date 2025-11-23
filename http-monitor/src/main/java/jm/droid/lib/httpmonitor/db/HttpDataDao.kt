@@ -21,5 +21,4 @@ interface HttpDataDao {
 
     @Query("DELETE FROM t_http_monitor_data")
     fun clear()
-
 }
