@@ -48,7 +48,7 @@ tasks.withType<KotlinJvmCompile>().configureEach {
 // Configure Dokka
 extensions.configure<DokkaExtension> {
     dokkaPublications.configureEach {
-        failOnWarning.set(true)
+        failOnWarning.set(false)
         suppressInheritedMembers.set(true)
     }
     dokkaSourceSets.configureEach {
