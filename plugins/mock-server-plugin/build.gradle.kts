@@ -1,3 +1,4 @@
+import com.vanniktech.maven.publish.GradlePlugin
 import com.vanniktech.maven.publish.JavaLibrary
 import com.vanniktech.maven.publish.JavadocJar
 import com.vanniktech.maven.publish.MavenPublishBaseExtension
@@ -57,15 +58,9 @@ extensions.configure<DokkaExtension> {
     }
 }
 
-// Configure Maven Publishing
-extensions.configure<MavenPublishBaseExtension> {
+mavenPublishing {
     pomFromGradleProperties()
     publishToMavenCentral()
-    // Only sign if signing is configured (for Maven Central)
-    // For local publishing, signing is optional
-    val signingKeyId = project.findProperty("signing.keyId") as String?
-    if (signingKeyId != null) {
-        signAllPublications()
-    }
-    configure(JavaLibrary(JavadocJar.Dokka("dokkaGenerateHtml")))
+    signAllPublications()
+    configure(GradlePlugin(JavadocJar.Javadoc(), true))
 }
